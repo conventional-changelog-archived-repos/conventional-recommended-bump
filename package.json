@@ -33,7 +33,8 @@
     "jscs": "^3.0.7",
     "jshint": "^2.6.3",
     "mocha": "*",
-    "shelljs": "^0.7.3"
+    "shelljs": "^0.7.3",
+    "stream-array": "1.1.2"
   },
   "scripts": {
     "coverage": "istanbul cover _mocha -- -R spec --timeout 20000 && rm -rf ./coverage",
