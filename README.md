@@ -45,9 +45,19 @@ If `true`, reverted commits will be ignored.
 
 ##### preset
 
-Type: `string` Possible values: `'angular'`
+Type: `string` Possible values: `'angular', 'simple'`
 
 It's recommended to use a preset so you don't have to define everything yourself. Presets are names of built-in `config`.
+
+The `simple` preset rules are in [presets/simple.js](presets/simple.js) and are as follows
+
+```
+// simple convention
+// BREAKING CHANGE - major (level 0)
+// feat(*)  - minor (level 1)
+// fix(*)   - patch (level 2)
+// anything else - no bump
+```
 
 ##### config
 
