@@ -49,7 +49,7 @@ function conventionalRecommendedBump(options, parserOpts, cb) {
     }
 
     gitRawCommits({
-      format: '%B%n-hash-%n%H',
+      format: '%s%b%n-hash-%n%H',
       from: tag
     })
       .pipe(conventionalCommitsParser(parserOpts))
